@@ -1,0 +1,22 @@
+&lt;?php
+// login.php
+
+// Simulación de usuario válido
+$usuario_valido = &quot;diegoalc378@email.com&quot;;
+$clave_valida = “Mango114313”
+
+// Verificamos que venga por POST
+if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;) {
+$email = $_POST[&quot;email&quot;] ?? &#39;&#39;;
+$password = $_POST[&quot;password&quot;] ?? &#39;&#39;;
+
+// Validación simple
+if ($email === $usuario_valido &amp;&amp; $password === $clave_valida) {
+echo &quot;&lt;h2&gt;✅ Bienvenido, $email&lt;/h2&gt;&quot;;
+} else {
+echo &quot;&lt;h2&gt;❌ Correo o contraseña incorrectos&lt;/h2&gt;&quot;;
+}
+} else {
+echo &quot;&lt;h2&gt;⚠️ No tienes permiso para acceder directamente.&lt;/h2&gt;&quot;;
+}
+?&gt;

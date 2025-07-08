@@ -1,0 +1,63 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Iniciar sesión&lt;/title&gt;
+&lt;style&gt;
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.login-box {
+background: white;
+padding: 40px;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 400px;
+text-align: center;
+}
+
+.login-box input {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.login-box button {
+width: 100%;
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.login-box button:hover {
+background-color: #45a049;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;login-box&quot;&gt;
+&lt;h1&gt;Iniciar sesión&lt;/h1&gt;
+&lt;form action=&quot;login.php&quot; method=&quot;POST&quot;&gt;
+
+&lt;input type=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Correo electrónico&quot; required&gt;
+&lt;input type=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Contraseña&quot;
+required&gt;
+&lt;button type=&quot;submit&quot;&gt;Entrar&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
